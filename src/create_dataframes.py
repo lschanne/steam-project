@@ -34,7 +34,7 @@ for newslist in newsitems:
             newsitem_tags.extend([{"gid": row["gid"], "tag": tag} for tag in tags])
 newsitems_df = pd.DataFrame(newsitems_data)
 newsitems_df.to_csv(os.path.join(DATA_DIR, "newsitems.csv"))
-newsitem_tags_df = pd.DataFrame(newsitems_data)
+newsitem_tags_df = pd.DataFrame(newsitem_tags)
 newsitem_tags_df.to_csv(os.path.join(DATA_DIR, "newsitem_tags.csv"))
 del newsitems_data, newsitem_tags, newsitems_df, newsitem_tags_df, newsitems
 

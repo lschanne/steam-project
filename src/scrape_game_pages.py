@@ -129,12 +129,9 @@ else:
     gamedetails = []
     starting_idx = 0
 
-# starting_idx = 113201
 for idx in tqdm(range(starting_idx, len(applist))):
     if idx and idx % 100 == 0:
         save_checkpoint(gamedetails, idx + 1)
-    # elif idx in (52006, 52007, 52008):
-    #     continue
     try:
         appid = applist[idx]["appid"]
     except Exception as e:

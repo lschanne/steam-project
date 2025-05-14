@@ -26,6 +26,7 @@ Run `sudo mysql_secure_installation`. Decline the VALIDATE PASSWORD component. D
 
 Run `sudo mysql` to start the MySQL prompt. From there, run:
 ```
+CREATE DATABASE steam_project;
 CREATE USER 'user'@'localhost' REQUIRE NONE;
 GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
 FLUSH PRIVILEGES;
